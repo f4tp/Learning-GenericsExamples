@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 
 namespace GenericsExample
 {
-    class Book
+    public class Book: Product
     {
 
         public int Isbn;
-        public string Title;
+        //public string Title;
 
 
-        public Book(int isbnin, string titlein)
+        public Book(int isbnin, string titlein, float costin)
         {
             this.Isbn = isbnin;
             this.Title = titlein;
+            this.Price = costin;
         }
     }
 }

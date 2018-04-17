@@ -8,6 +8,8 @@ namespace GenericsExample
 {
     class GenericList<T>
     {
+        private T t;
+
         //T is a type passed in via the angled brackets <>
         public void Add(T datatypein)
         {
